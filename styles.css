@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.main-container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-container > header {
+  position: fixed;
+  height: 40px;
+  top: 0;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.main-container > header::after {
+  content: '';
+  position: absolute;
+  background: linear-gradient(#000000aa, #00000000);
+  height: 5px;
+  left: 0;
+  right: 0;
+  top: 100%;
+}
+
+.main-container > main {
+  flex: 1 0 auto;
+  overflow-y: auto;
+  background-color: #ccc;
+}
+
+.main-container > footer {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  position: relative;
+}
+
+.main-container > footer::before {
+  content: '';
+  position: absolute;
+  background: linear-gradient(#00000000, #000000aa);
+  height: 5px;
+  left: 0;
+  right: 0;
+  top: -5px;
+}
+
+.container {
+  /* max-width: 1440px; */
+  width: 100%;
+  max-width: 988px;
+  margin: 5px auto;
+  padding: 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+}
